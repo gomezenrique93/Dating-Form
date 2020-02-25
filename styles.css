@@ -1,0 +1,78 @@
+header {
+  background-color: mediumaquamarine;
+  border: 10px solid;
+  text-align: left;
+  margin-right: 200px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  padding-left: 15px;
+}
+legend {
+  background-color: lightgrey;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 4px;
+}
+
+label {
+  width: 180px;
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  font-size: 18px;
+}
+
+fieldset {
+  background: royalblue;
+  border: 10px solid lightsteelblue;
+  margin: 15px 15px;
+  border-radius: 10px;
+  width: 720px;
+}
+
+label:hover {
+  font-size: large;
+  font-weight: bold;
+}
+input:hover {
+  font-size: large;
+  font-weight: bold;
+}
+
+label input [type="checkbox"],
+input[type="radio"] {
+  width: auto;
+}
+
+.box_radio {
+  width: auto;
+  text-align: right;
+  vertical-align: top;
+}
+
+.lrange {
+  background-color: red;
+  width: 60px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.rrange {
+  background-color: purple;
+  width: 60px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.button {
+  background-color: #407fc7;
+  margin-left: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  color: antiquewhite;
+}

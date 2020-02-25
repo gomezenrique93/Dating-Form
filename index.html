@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+
+    <title>Dating Website</title>
+  </head>
+  <body>
+    <!--Page Header-->
+    <header>
+      <h1>Please Enter Your Details For Our Dating Website!</h1>
+    </header>
+    <!---->
+
+    <!--Dating Forms-->
+    <form
+      action="https://learn.nucamp.co/show_everything.php"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <!--Image Section-->
+      <fieldset>
+        <legend>Your Face</legend>
+        <label for="avatar">Your Image</label>
+        <input type="file" name="avatar" id="avatar" required />
+        <br />
+        <label for="image">Image Preview:</label>
+        <img alt="your-image" id="preview" name="preview" width="140px" />
+      </fieldset>
+      <!---->
+
+      <!--General Details-->
+      <fieldset>
+        <legend>Your General Details</legend>
+        <!--This is where you left off, check on 01/12/2019-->
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required /> <br />
+
+        <label for="gender">Gender:</label>
+        <label class="box_radio" for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" />
+
+        <label class="box_radio" for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female" /> <br />
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" required /> <br />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob" /> <br />
+        <label for="color">Favourite Color</label>
+        <input type="color" name="color" id="color" /> <br />
+        <label for="counry">Which Country:</label>
+        <select name="country" id="country">
+          <option value="no-selection">No Selection</option>
+          <option value="usa">USA</option>
+          <option value="australia">Australia</option>
+          <option value="brazil">Brazil</option>
+          <option value="russia">Russia</option>
+          <option value="canada">Canada</option>
+        </select>
+      </fieldset>
+      <!---->
+
+      <!--Your Indicators-->
+      <fieldset>
+        <legend>Your Indicators</legend>
+
+        <label for="height">Height:</label> <span class="lrange">Short</span>
+        <input type="range" min="0" max="100" /><span class="rrange">Tall</span
+        ><br />
+
+        <label for="salary">Salary:</label><span class="lrange">Poor</span>
+        <input type="range" min="0" max="100" /><span class="rrange">Rich</span>
+        <br />
+      </fieldset>
+      <!---->
+
+      <!--Contact Info-->
+      <fieldset>
+        <legend>Your Contact Information</legend>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required /> <br />
+
+        <label for="mobile">Mobile:</label>
+        <input type="tel" name="mobile" id="mobile" required /><br />
+
+        <label for="address">Address:</label>
+        <textarea
+          name="address"
+          id="address"
+          cols="20"
+          rows="3"
+          required
+        ></textarea>
+        <br />
+        <label for="method">Method to Contact You:</label>
+        <input type="checkbox" name="method" id="email-method" />
+        <label class="box_radio" for="email-method">Email</label>
+
+        <input type="checkbox" name="method" id="whatsapp-method" />
+        <label class="box_radio" for="whatsapp-method">Whatsapp</label>
+
+        <input type="checkbox" name="method" id="inappchat-method" />
+        <label class="box_radio" for="inappchat-method">In-app chat</label>
+      </fieldset>
+      <!---->
+
+      <input type="submit" value="submit" class="button" />
+    </form>
+    <script src="https://url.nucamp.co/datingjs"></script>
+  </body>
+</html>
